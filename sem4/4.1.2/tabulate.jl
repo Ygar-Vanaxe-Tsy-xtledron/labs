@@ -1,4 +1,4 @@
-include("/../LabTools.jl")
+include("../LabTools.jl")
 
 using .LabTools, CSV, DataFrames
 
