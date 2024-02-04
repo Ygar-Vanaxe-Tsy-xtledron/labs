@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage[OT1]{fontenc}
+\usepackage{amsmath, amsfonts, amssymb, multirow, textcomp, gensymb, wrapfig, csquotes}
+\usepackage{pgf, tikz, pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{backgrounds}
+\usepgfplotslibrary{patchplots}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{
+    layers/standard/.define layer set={
+        background,axis background,axis grid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis foreground
+    }{
+        grid style={/pgfplots/on layer=axis grid},
+        tick style={/pgfplots/on layer=axis ticks},
+        axis line style={/pgfplots/on layer=axis lines},
+        label style={/pgfplots/on layer=axis descriptions},
+        legend style={/pgfplots/on layer=axis descriptions},
+        title style={/pgfplots/on layer=axis descriptions},
+        colorbar style={/pgfplots/on layer=axis descriptions},
+        ticklabel style={/pgfplots/on layer=axis tick labels},
+        axis background@ style={/pgfplots/on layer=axis background},
+        3d box foreground style={/pgfplots/on layer=axis foreground},
+    },
+}
+\usepackage{graphicx}
+\graphicspath{{../pics}}
+\usepackage[style=gost-numeric, % стиль цитирования и библиографии
+language=auto, % получение языка из babel
+autolang=other, % многоязычная библиография
+]{biblatex}
+\addbibresource{../data/lab_sources.bib}
+
+\author{Демурин Артём Андреевич}
+\title{ \textbf{Отчёт о выполнеии лабораторной работы} \\ 0.0.0}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\newpage
+\section{Аннотация}
+
+Test cite \cite{julia:2017}
+
+\newpage
+\section{Оборудовние и теоретические сведения}
+
+\newpage
+\section{Обработка результатов}
+
+\newpage
+\section{Выводы}
+
+\printbibliography
+\end{document}
